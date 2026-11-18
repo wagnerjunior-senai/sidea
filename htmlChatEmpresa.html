@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>bot-Vinny | SIDE A</title>
+
+    <link rel="stylesheet" href="styleChatBotEmpresa.css">
+
+    <script src="scriptChatEmpresa.js" defer></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <div class="marca">
+            <h1>SIDE A</h1>
+            <p>VINYL • MUSIC • COLLECTIBLES</p>
+        </div>
+
+        <span class="status">
+            <span class="status-bolinha"></span>
+            BOT-VINNY ONLINE
+        </span>
+
+    </header>
+
+    <main class="container">
+
+        <section class="chat-card">
+
+            <div class="chat-topo">
+
+                <div class="avatar">♫</div>
+
+                <div>
+                    <h2>bot-Vinny</h2>
+                    <p>Assistente virtual da SIDE A</p>
+                </div>
+
+            </div>
+
+            <div class="boas-vindas">
+                <h3>Olá! Seja bem-vindo à SIDE A!</h3>
+
+                <p>
+                    Sou o Vinny, seu assistente virtual.
+                    Vamos conversar sobre música, vinil,
+                    Rock, Pop e K-Pop!
+                </p>
+            </div>
+
+            <div class="configuracao">
+
+                <label for="apiKey">Chave da API OpenAI:</label>
+
+                <input
+                    type="password"
+                    id="apiKey"
+                    placeholder="Cole sua chave API aqui"
+                    autocomplete="off"
+                >
+
+                <small>
+                    Sua chave será utilizada somente nesta sessão do navegador.
+                </small>
+
+            </div>
+
+            <div class="conversa" id="conversa">
+
+                <div class="mensagem bot">
+                    <strong>Vinny:</strong>
+                    Olá! Como posso ajudar você hoje? 🎵
+                </div>
+
+            </div>
+
+            <form id="chatForm" class="area-envio">
+
+                <label for="mensagem">Digite sua mensagem:</label>
+
+                <textarea
+                    id="mensagem"
+                    placeholder="Escreva sua mensagem aqui..."
+                    rows="3"
+                    required
+                ></textarea>
+
+                <button type="submit" id="botaoEnviar">
+                    ENVIAR MENSAGEM
+                </button>
+
+            </form>
+
+            <p id="aviso" class="aviso" aria-live="polite"></p>
+
+            <button type="button" id="limparConversa" class="limpar">
+                Limpar conversa
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Every record tells a story.</p>
+        <span>© 2026 SIDE A • VINYL • MUSIC • COLLECTIBLES</span>
+    </footer>
+
+</body>
+</html>
